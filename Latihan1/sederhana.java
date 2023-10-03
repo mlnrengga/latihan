@@ -7,7 +7,9 @@ public class sederhana {
             System.out.println("benar");
         } else if (a == b) {
             System.out.println("salah");
-        } else {
+        } else if (a >= b) {
+            System.out.println("salah");
+        }else {
             System.out.println("gaje");
         }
     }
