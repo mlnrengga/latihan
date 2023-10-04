@@ -1,14 +1,25 @@
+import java.util.Scanner;
+
 public class sederhana {
     public static void main (String[] args) {
-        int a = 10, b = 20;
-        if (a > b) {
-            System.out.println("salah");
-        } else if (a < b) {
-            System.out.println("benar");
-        } else if (a == b) {
-            System.out.println("salah");
+        Scanner input = new Scanner(System.in);
+        String username = "Rifda", username1;
+        int password = 12345, password1;
+
+        System.out.println("Masukkan Username Anda");
+        username1 = input.next();
+        System.out.println("Masukkan Password Anda");
+        password1 = input.nextInt();
+        input.close();
+
+        if (username1.equals(username) && password1 == password) {
+            System.out.println("Anda Berhasil login");
+        } else if (username1 != username && password1 == password) {
+            System.out.println("Username Anda Salah");
+        } else if (username1.equals(username) && password1 != password) {
+            System.out.println("Password Anda Salah");
         } else {
-            System.out.println("gaje");
+            System.out.println("Username dan Password Anda Salah ");
         }
     }
 }
