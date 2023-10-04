@@ -19,7 +19,7 @@ public class sederhana {
         } else if (username1.equals(username) && password1 != password) {
             System.out.println("Password Anda Salah");
         } else {
-            System.out.println("Username dan Password Anda Salah");
+            System.out.println("Username dan Password Anda Salah ");
         }
     }
 }
